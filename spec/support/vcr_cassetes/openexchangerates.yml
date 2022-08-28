@@ -1,0 +1,278 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openexchangerates.org/api/latest.json?app_id=<OPEN_EXCHANGE_RATES_APP_ID>&show_alternative=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 28 Aug 2022 19:02:57 GMT
+      Etag:
+      - W/"23a797af06431c6f2b44f89d984079b4"
+      Last-Modified:
+      - Sun, 28 Aug 2022 19:00:17 GMT
+      Server:
+      - nginx/1.12.2
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "disclaimer": "Usage subject to terms: https://openexchangerates.org/terms",
+          "license": "https://openexchangerates.org/license",
+          "timestamp": 1661713217,
+          "base": "USD",
+          "rates": {
+            "AED": 3.6731,
+            "AFN": 88.926798,
+            "ALL": 117.455245,
+            "AMD": 406.231339,
+            "ANG": 1.811349,
+            "AOA": 428.61875,
+            "ARS": 138.082114,
+            "AUD": 1.451711,
+            "AWG": 1.8,
+            "AZN": 1.7,
+            "BAM": 1.962601,
+            "BBD": 2,
+            "BDT": 95.488653,
+            "BGN": 1.961734,
+            "BHD": 0.3769,
+            "BIF": 2072.884087,
+            "BMD": 1,
+            "BND": 1.396518,
+            "BOB": 6.959912,
+            "BRL": 5.063123,
+            "BSD": 1,
+            "BTC": 0.000049949845,
+            "BTN": 80.214438,
+            "BTS": 100.027274184,
+            "BWP": 12.803071,
+            "BYN": 2.537354,
+            "BZD": 2.025889,
+            "CAD": 1.30352,
+            "CDF": 2063.330599,
+            "CHF": 0.965403,
+            "CLF": 0.032727,
+            "CLP": 903.02614,
+            "CNH": 6.871,
+            "CNY": 6.8718,
+            "COP": 4417.5405,
+            "CRC": 634.579245,
+            "CUC": 1,
+            "CUP": 25.75,
+            "CVE": 111.1,
+            "CZK": 24.7061,
+            "DASH": 0.0218667329,
+            "DJF": 178.917231,
+            "DKK": 7.46395,
+            "DOGE": 15.6220262746,
+            "DOP": 53.362099,
+            "DZD": 140.801756,
+            "EGP": 19.190207,
+            "ERN": 15,
+            "ETB": 53.021123,
+            "ETH": 0.0006712193,
+            "EUR": 1.003512,
+            "FJD": 2.2149,
+            "FKP": 0.8511,
+            "GBP": 0.8511,
+            "GEL": 2.825,
+            "GGP": 0.8511,
+            "GHS": 10.008525,
+            "GIP": 0.8511,
+            "GMD": 54.3,
+            "GNF": 8675.501109,
+            "GTQ": 7.776429,
+            "GYD": 210.265433,
+            "HKD": 7.8467,
+            "HNL": 24.726306,
+            "HRK": 7.541217,
+            "HTG": 127.137603,
+            "HUF": 413.06,
+            "IDR": 14852.6,
+            "ILS": 3.26667,
+            "IMP": 0.8511,
+            "INR": 79.9603,
+            "IQD": 1466.881672,
+            "IRR": 42350,
+            "ISK": 140.785741,
+            "JEP": 0.8511,
+            "JMD": 151.53482,
+            "JOD": 0.709,
+            "JPY": 137.565,
+            "KES": 120.503931,
+            "KGS": 80.83185,
+            "KHR": 4125.638099,
+            "KMF": 494.149841,
+            "KPW": 900,
+            "KRW": 1342.18,
+            "KWD": 0.307761,
+            "KYD": 0.83759,
+            "KZT": 477.146422,
+            "LAK": 15359.592661,
+            "LBP": 1519.845532,
+            "LD": 320,
+            "LKR": 356.777796,
+            "LRD": 153.549975,
+            "LSL": 16.932417,
+            "LTC": 0.0181100498,
+            "LYD": 4.943154,
+            "MAD": 10.596157,
+            "MDL": 19.410768,
+            "MGA": 4226.212934,
+            "MKD": 61.828316,
+            "MMK": 2110.579846,
+            "MNT": 3193.450782,
+            "MOP": 8.122824,
+            "MRU": 37.839547,
+            "MUR": 44.20367,
+            "MVR": 15.35,
+            "MWK": 1029.910239,
+            "MXN": 20.0226,
+            "MYR": 4.4675,
+            "MZN": 63.850001,
+            "NAD": 16.87,
+            "NGN": 427.89634,
+            "NIO": 36.120618,
+            "NOK": 9.807615,
+            "NPR": 128.342789,
+            "NXT": 332.071928191,
+            "NZD": 1.629584,
+            "OMR": 0.384918,
+            "PAB": 1,
+            "PEN": 3.870955,
+            "PGK": 3.54202,
+            "PHP": 56.18,
+            "PKR": 221.31816,
+            "PLN": 4.752499,
+            "PYG": 6899.936136,
+            "QAR": 3.681702,
+            "RON": 4.8868,
+            "RSD": 117.691001,
+            "RUB": 60.299997,
+            "RWF": 1036.917471,
+            "SAR": 3.756648,
+            "SBD": 8.244113,
+            "SCR": 13.245,
+            "SDG": 578.5,
+            "SEK": 10.682875,
+            "SGD": 1.3931,
+            "SHP": 0.8511,
+            "SLL": 13748.9,
+            "SOS": 571.37124,
+            "SRD": 24.7245,
+            "SSP": 130.26,
+            "STD": 22392.090504,
+            "STN": 24.8,
+            "STR": 12.4859045,
+            "SVC": 8.794341,
+            "SYP": 2512.53,
+            "SZL": 16.917767,
+            "THB": 36.195875,
+            "TJS": 10.22628,
+            "TMT": 3.5,
+            "TND": 3.2025,
+            "TOP": 2.343463,
+            "TRY": 18.1629,
+            "TTD": 6.825247,
+            "TWD": 30.296499,
+            "TZS": 2343.740143,
+            "UAH": 37.118059,
+            "UGX": 3824.19023,
+            "USD": 1,
+            "UYU": 40.418345,
+            "UZS": 10986.931791,
+            "VEF_BLKMKT": 8.78,
+            "VEF_DICOM": 7.83,
+            "VEF_DIPRO": 469.88,
+            "VES": 6.08655,
+            "VND": 23420,
+            "VUV": 117.30904,
+            "WST": 2.692725,
+            "XAF": 658.26092,
+            "XAG": 0.05256656,
+            "XAU": 0.00057544,
+            "XCD": 2.70255,
+            "XDR": 0.740817,
+            "XMR": 0.006772016,
+            "XOF": 658.26092,
+            "XPD": 0.0004735,
+            "XPF": 119.750871,
+            "XPT": 0.00113443,
+            "XRP": 2.9763777116,
+            "YER": 250.249937,
+            "ZAR": 16.88698,
+            "ZMW": 16.231398,
+            "ZWL": 322
+          }
+        }
+  recorded_at: Sun, 28 Aug 2022 19:02:57 GMT
+- request:
+    method: get
+    uri: https://openexchangerates.org/api/currencies.json?app_id=<OPEN_EXCHANGE_RATES_APP_ID>&show_alternative=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 28 Aug 2022 19:02:57 GMT
+      Etag:
+      - W/"954fb9460d688481d96a77fe7ae8089e"
+      Last-Modified:
+      - Thu, 23 Dec 2021 13:45:36 GMT
+      Server:
+      - nginx/1.12.2
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2434'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJBRUQiOiAiVW5pdGVkIEFyYWIgRW1pcmF0ZXMgRGlyaGFtIiwKICAiQUZOIjogIkFmZ2hhbiBBZmdoYW5pIiwKICAiQUxMIjogIkFsYmFuaWFuIExlayIsCiAgIkFNRCI6ICJBcm1lbmlhbiBEcmFtIiwKICAiQU5HIjogIk5ldGhlcmxhbmRzIEFudGlsbGVhbiBHdWlsZGVyIiwKICAiQU9BIjogIkFuZ29sYW4gS3dhbnphIiwKICAiQVJTIjogIkFyZ2VudGluZSBQZXNvIiwKICAiQVVEIjogIkF1c3RyYWxpYW4gRG9sbGFyIiwKICAiQVdHIjogIkFydWJhbiBGbG9yaW4iLAogICJBWk4iOiAiQXplcmJhaWphbmkgTWFuYXQiLAogICJCQU0iOiAiQm9zbmlhLUhlcnplZ292aW5hIENvbnZlcnRpYmxlIE1hcmsiLAogICJCQkQiOiAiQmFyYmFkaWFuIERvbGxhciIsCiAgIkJEVCI6ICJCYW5nbGFkZXNoaSBUYWthIiwKICAiQkdOIjogIkJ1bGdhcmlhbiBMZXYiLAogICJCSEQiOiAiQmFocmFpbmkgRGluYXIiLAogICJCSUYiOiAiQnVydW5kaWFuIEZyYW5jIiwKICAiQk1EIjogIkJlcm11ZGFuIERvbGxhciIsCiAgIkJORCI6ICJCcnVuZWkgRG9sbGFyIiwKICAiQk9CIjogIkJvbGl2aWFuIEJvbGl2aWFubyIsCiAgIkJSTCI6ICJCcmF6aWxpYW4gUmVhbCIsCiAgIkJTRCI6ICJCYWhhbWlhbiBEb2xsYXIiLAogICJCVEMiOiAiQml0Y29pbiIsCiAgIkJUTiI6ICJCaHV0YW5lc2UgTmd1bHRydW0iLAogICJCVFMiOiAiQml0U2hhcmVzIiwKICAiQldQIjogIkJvdHN3YW5hbiBQdWxhIiwKICAiQllOIjogIkJlbGFydXNpYW4gUnVibGUiLAogICJCWkQiOiAiQmVsaXplIERvbGxhciIsCiAgIkNBRCI6ICJDYW5hZGlhbiBEb2xsYXIiLAogICJDREYiOiAiQ29uZ29sZXNlIEZyYW5jIiwKICAiQ0hGIjogIlN3aXNzIEZyYW5jIiwKICAiQ0xGIjogIkNoaWxlYW4gVW5pdCBvZiBBY2NvdW50IChVRikiLAogICJDTFAiOiAiQ2hpbGVhbiBQZXNvIiwKICAiQ05IIjogIkNoaW5lc2UgWXVhbiAoT2Zmc2hvcmUpIiwKICAiQ05ZIjogIkNoaW5lc2UgWXVhbiIsCiAgIkNPUCI6ICJDb2xvbWJpYW4gUGVzbyIsCiAgIkNSQyI6ICJDb3N0YSBSaWNhbiBDb2zDs24iLAogICJDVUMiOiAiQ3ViYW4gQ29udmVydGlibGUgUGVzbyIsCiAgIkNVUCI6ICJDdWJhbiBQZXNvIiwKICAiQ1ZFIjogIkNhcGUgVmVyZGVhbiBFc2N1ZG8iLAogICJDWksiOiAiQ3plY2ggUmVwdWJsaWMgS29ydW5hIiwKICAiREFTSCI6ICJEYXNoIiwKICAiREpGIjogIkRqaWJvdXRpYW4gRnJhbmMiLAogICJES0siOiAiRGFuaXNoIEtyb25lIiwKICAiRE9HRSI6ICJEb2dlQ29pbiIsCiAgIkRPUCI6ICJEb21pbmljYW4gUGVzbyIsCiAgIkRaRCI6ICJBbGdlcmlhbiBEaW5hciIsCiAgIkVBQyI6ICJFYXJ0aENvaW4iLAogICJFR1AiOiAiRWd5cHRpYW4gUG91bmQiLAogICJFTUMiOiAiRW1lcmNvaW4iLAogICJFUk4iOiAiRXJpdHJlYW4gTmFrZmEiLAogICJFVEIiOiAiRXRoaW9waWFuIEJpcnIiLAogICJFVEgiOiAiRXRoZXJldW0iLAogICJFVVIiOiAiRXVybyIsCiAgIkZDVCI6ICJGYWN0b20iLAogICJGSkQiOiAiRmlqaWFuIERvbGxhciIsCiAgIkZLUCI6ICJGYWxrbGFuZCBJc2xhbmRzIFBvdW5kIiwKICAiRlRDIjogIkZlYXRoZXJjb2luIiwKICAiR0JQIjogIkJyaXRpc2ggUG91bmQgU3RlcmxpbmciLAogICJHRUwiOiAiR2VvcmdpYW4gTGFyaSIsCiAgIkdHUCI6ICJHdWVybnNleSBQb3VuZCIsCiAgIkdIUyI6ICJHaGFuYWlhbiBDZWRpIiwKICAiR0lQIjogIkdpYnJhbHRhciBQb3VuZCIsCiAgIkdNRCI6ICJHYW1iaWFuIERhbGFzaSIsCiAgIkdORiI6ICJHdWluZWFuIEZyYW5jIiwKICAiR1RRIjogIkd1YXRlbWFsYW4gUXVldHphbCIsCiAgIkdZRCI6ICJHdXlhbmFlc2UgRG9sbGFyIiwKICAiSEtEIjogIkhvbmcgS29uZyBEb2xsYXIiLAogICJITkwiOiAiSG9uZHVyYW4gTGVtcGlyYSIsCiAgIkhSSyI6ICJDcm9hdGlhbiBLdW5hIiwKICAiSFRHIjogIkhhaXRpYW4gR291cmRlIiwKICAiSFVGIjogIkh1bmdhcmlhbiBGb3JpbnQiLAogICJJRFIiOiAiSW5kb25lc2lhbiBSdXBpYWgiLAogICJJTFMiOiAiSXNyYWVsaSBOZXcgU2hlcWVsIiwKICAiSU1QIjogIk1hbnggcG91bmQiLAogICJJTlIiOiAiSW5kaWFuIFJ1cGVlIiwKICAiSVFEIjogIklyYXFpIERpbmFyIiwKICAiSVJSIjogIklyYW5pYW4gUmlhbCIsCiAgIklTSyI6ICJJY2VsYW5kaWMgS3LDs25hIiwKICAiSkVQIjogIkplcnNleSBQb3VuZCIsCiAgIkpNRCI6ICJKYW1haWNhbiBEb2xsYXIiLAogICJKT0QiOiAiSm9yZGFuaWFuIERpbmFyIiwKICAiSlBZIjogIkphcGFuZXNlIFllbiIsCiAgIktFUyI6ICJLZW55YW4gU2hpbGxpbmciLAogICJLR1MiOiAiS3lyZ3lzdGFuaSBTb20iLAogICJLSFIiOiAiQ2FtYm9kaWFuIFJpZWwiLAogICJLTUYiOiAiQ29tb3JpYW4gRnJhbmMiLAogICJLUFciOiAiTm9ydGggS29yZWFuIFdvbiIsCiAgIktSVyI6ICJTb3V0aCBLb3JlYW4gV29uIiwKICAiS1dEIjogIkt1d2FpdGkgRGluYXIiLAogICJLWUQiOiAiQ2F5bWFuIElzbGFuZHMgRG9sbGFyIiwKICAiS1pUIjogIkthemFraHN0YW5pIFRlbmdlIiwKICAiTEFLIjogIkxhb3RpYW4gS2lwIiwKICAiTEJQIjogIkxlYmFuZXNlIFBvdW5kIiwKICAiTEQiOiAiTGluZGVuIERvbGxhciIsCiAgIkxLUiI6ICJTcmkgTGFua2FuIFJ1cGVlIiwKICAiTFJEIjogIkxpYmVyaWFuIERvbGxhciIsCiAgIkxTTCI6ICJMZXNvdGhvIExvdGkiLAogICJMVEMiOiAiTGl0ZUNvaW4iLAogICJMWUQiOiAiTGlieWFuIERpbmFyIiwKICAiTUFEIjogIk1vcm9jY2FuIERpcmhhbSIsCiAgIk1ETCI6ICJNb2xkb3ZhbiBMZXUiLAogICJNR0EiOiAiTWFsYWdhc3kgQXJpYXJ5IiwKICAiTUtEIjogIk1hY2Vkb25pYW4gRGVuYXIiLAogICJNTUsiOiAiTXlhbm1hIEt5YXQiLAogICJNTlQiOiAiTW9uZ29saWFuIFR1Z3JpayIsCiAgIk1PUCI6ICJNYWNhbmVzZSBQYXRhY2EiLAogICJNUlUiOiAiTWF1cml0YW5pYW4gT3VndWl5YSIsCiAgIk1VUiI6ICJNYXVyaXRpYW4gUnVwZWUiLAogICJNVlIiOiAiTWFsZGl2aWFuIFJ1Zml5YWEiLAogICJNV0siOiAiTWFsYXdpYW4gS3dhY2hhIiwKICAiTVhOIjogIk1leGljYW4gUGVzbyIsCiAgIk1ZUiI6ICJNYWxheXNpYW4gUmluZ2dpdCIsCiAgIk1aTiI6ICJNb3phbWJpY2FuIE1ldGljYWwiLAogICJOQUQiOiAiTmFtaWJpYW4gRG9sbGFyIiwKICAiTkdOIjogIk5pZ2VyaWFuIE5haXJhIiwKICAiTklPIjogIk5pY2FyYWd1YW4gQ8OzcmRvYmEiLAogICJOTUMiOiAiTmFtZWNvaW4iLAogICJOT0siOiAiTm9yd2VnaWFuIEtyb25lIiwKICAiTlBSIjogIk5lcGFsZXNlIFJ1cGVlIiwKICAiTlZDIjogIk5vdmFDb2luIiwKICAiTlhUIjogIk54dCIsCiAgIk5aRCI6ICJOZXcgWmVhbGFuZCBEb2xsYXIiLAogICJPTVIiOiAiT21hbmkgUmlhbCIsCiAgIlBBQiI6ICJQYW5hbWFuaWFuIEJhbGJvYSIsCiAgIlBFTiI6ICJQZXJ1dmlhbiBOdWV2byBTb2wiLAogICJQR0siOiAiUGFwdWEgTmV3IEd1aW5lYW4gS2luYSIsCiAgIlBIUCI6ICJQaGlsaXBwaW5lIFBlc28iLAogICJQS1IiOiAiUGFraXN0YW5pIFJ1cGVlIiwKICAiUExOIjogIlBvbGlzaCBabG90eSIsCiAgIlBQQyI6ICJQZWVyY29pbiIsCiAgIlBZRyI6ICJQYXJhZ3VheWFuIEd1YXJhbmkiLAogICJRQVIiOiAiUWF0YXJpIFJpYWwiLAogICJST04iOiAiUm9tYW5pYW4gTGV1IiwKICAiUlNEIjogIlNlcmJpYW4gRGluYXIiLAogICJSVUIiOiAiUnVzc2lhbiBSdWJsZSIsCiAgIlJXRiI6ICJSd2FuZGFuIEZyYW5jIiwKICAiU0FSIjogIlNhdWRpIFJpeWFsIiwKICAiU0JEIjogIlNvbG9tb24gSXNsYW5kcyBEb2xsYXIiLAogICJTQ1IiOiAiU2V5Y2hlbGxvaXMgUnVwZWUiLAogICJTREciOiAiU3VkYW5lc2UgUG91bmQiLAogICJTRUsiOiAiU3dlZGlzaCBLcm9uYSIsCiAgIlNHRCI6ICJTaW5nYXBvcmUgRG9sbGFyIiwKICAiU0hQIjogIlNhaW50IEhlbGVuYSBQb3VuZCIsCiAgIlNMTCI6ICJTaWVycmEgTGVvbmVhbiBMZW9uZSIsCiAgIlNPUyI6ICJTb21hbGkgU2hpbGxpbmciLAogICJTUkQiOiAiU3VyaW5hbWVzZSBEb2xsYXIiLAogICJTU1AiOiAiU291dGggU3VkYW5lc2UgUG91bmQiLAogICJTVEQiOiAiU8OjbyBUb23DqSBhbmQgUHLDrW5jaXBlIERvYnJhIChwcmUtMjAxOCkiLAogICJTVE4iOiAiU8OjbyBUb23DqSBhbmQgUHLDrW5jaXBlIERvYnJhIiwKICAiU1RSIjogIlN0ZWxsYXIiLAogICJTVkMiOiAiU2FsdmFkb3JhbiBDb2zDs24iLAogICJTWVAiOiAiU3lyaWFuIFBvdW5kIiwKICAiU1pMIjogIlN3YXppIExpbGFuZ2VuaSIsCiAgIlRIQiI6ICJUaGFpIEJhaHQiLAogICJUSlMiOiAiVGFqaWtpc3RhbmkgU29tb25pIiwKICAiVE1UIjogIlR1cmttZW5pc3RhbmkgTWFuYXQiLAogICJUTkQiOiAiVHVuaXNpYW4gRGluYXIiLAogICJUT1AiOiAiVG9uZ2FuIFBhJ2FuZ2EiLAogICJUUlkiOiAiVHVya2lzaCBMaXJhIiwKICAiVFREIjogIlRyaW5pZGFkIGFuZCBUb2JhZ28gRG9sbGFyIiwKICAiVFdEIjogIk5ldyBUYWl3YW4gRG9sbGFyIiwKICAiVFpTIjogIlRhbnphbmlhbiBTaGlsbGluZyIsCiAgIlVBSCI6ICJVa3JhaW5pYW4gSHJ5dm5pYSIsCiAgIlVHWCI6ICJVZ2FuZGFuIFNoaWxsaW5nIiwKICAiVVNEIjogIlVuaXRlZCBTdGF0ZXMgRG9sbGFyIiwKICAiVVlVIjogIlVydWd1YXlhbiBQZXNvIiwKICAiVVpTIjogIlV6YmVraXN0YW4gU29tIiwKICAiVkVGIjogIlZlbmV6dWVsYW4gQm9sw612YXIgRnVlcnRlIChPbGQpIiwKICAiVkVGX0JMS01LVCI6ICJWZW5lenVlbGFuIEJvbMOtdmFyIChCbGFjayBNYXJrZXQpIiwKICAiVkVGX0RJQ09NIjogIlZlbmV6dWVsYW4gQm9sw612YXIgKERJQ09NKSIsCiAgIlZFRl9ESVBSTyI6ICJWZW5lenVlbGFuIEJvbMOtdmFyIChESVBSTykiLAogICJWRVMiOiAiVmVuZXp1ZWxhbiBCb2zDrXZhciBTb2JlcmFubyIsCiAgIlZORCI6ICJWaWV0bmFtZXNlIERvbmciLAogICJWVEMiOiAiVmVydENvaW4iLAogICJWVVYiOiAiVmFudWF0dSBWYXR1IiwKICAiV1NUIjogIlNhbW9hbiBUYWxhIiwKICAiWEFGIjogIkNGQSBGcmFuYyBCRUFDIiwKICAiWEFHIjogIlNpbHZlciBPdW5jZSIsCiAgIlhBVSI6ICJHb2xkIE91bmNlIiwKICAiWENEIjogIkVhc3QgQ2FyaWJiZWFuIERvbGxhciIsCiAgIlhEUiI6ICJTcGVjaWFsIERyYXdpbmcgUmlnaHRzIiwKICAiWE1SIjogIk1vbmVybyIsCiAgIlhPRiI6ICJDRkEgRnJhbmMgQkNFQU8iLAogICJYUEQiOiAiUGFsbGFkaXVtIE91bmNlIiwKICAiWFBGIjogIkNGUCBGcmFuYyIsCiAgIlhQTSI6ICJQcmltZWNvaW4iLAogICJYUFQiOiAiUGxhdGludW0gT3VuY2UiLAogICJYUlAiOiAiUmlwcGxlIiwKICAiWUVSIjogIlllbWVuaSBSaWFsIiwKICAiWkFSIjogIlNvdXRoIEFmcmljYW4gUmFuZCIsCiAgIlpNVyI6ICJaYW1iaWFuIEt3YWNoYSIsCiAgIlpXTCI6ICJaaW1iYWJ3ZWFuIERvbGxhciIKfQ==
+  recorded_at: Sun, 28 Aug 2022 19:02:57 GMT
+recorded_with: VCR 6.1.0
