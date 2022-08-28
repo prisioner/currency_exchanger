@@ -24,4 +24,5 @@ group :development, :test do
 
   gem "vcr"
   gem "webmock"
+  gem "rswag-specs"
 end
