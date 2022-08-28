@@ -1,0 +1,124 @@
+---
+openapi: 3.0.1
+info:
+  title: Currency Exchanger API V1
+  version: v1
+paths:
+  "/api/v1/currencies":
+    get:
+      summary: return cuirrencies list
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        schema:
+          type: string
+        description: Bearer TOKEN
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Page number for pagination
+      responses:
+        '200':
+          description: successful request
+          content:
+            application/json:
+              examples:
+                success_example:
+                  value:
+                  - iso: CNY
+                    name: Chinese Yuan
+                    rate: '15.0'
+                  - iso: JPY
+                    name: Japanese Yen
+                    rate: '50.0'
+                  - iso: RUB
+                    name: Russian Ruble
+                    rate: '30.0'
+                  - iso: UAH
+                    name: Ukrainian Hryvnia
+                    rate: '10.0'
+                  - iso: USD
+                    name: United States Dollar
+                    rate: '1.0'
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    iso:
+                      type: string
+                      description: Currency ISO code
+                    name:
+                      type: string
+                      description: Currency name
+                    rate:
+                      type: string
+                      description: Currency rate (USD based)
+                  required:
+                  - iso
+                  - name
+                  - rate
+        '403':
+          description: Auth token invalid
+          content:
+            application/json:
+              examples:
+                error_example:
+                  value:
+                    error: Auth token invalid
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  "/api/v1/currencies/{iso}":
+    get:
+      summary: return cuirrency details
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        schema:
+          type: string
+        description: Bearer TOKEN
+      - name: iso
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Currency ISO code
+      responses:
+        '200':
+          description: successful request
+          content:
+            application/json:
+              examples:
+                success_example:
+                  value:
+                    iso: RUB
+                    name: Russian Ruble
+                    rate: '30.0'
+              schema:
+                type: object
+                properties:
+                  iso:
+                    type: string
+                    description: Currency ISO code
+                  name:
+                    type: string
+                    description: Currency name
+                  rate:
+                    type: string
+                    description: Currency rate (USD based)
+                required:
+                - iso
+                - name
+                - rate
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

@@ -10,6 +10,9 @@ gem "dotenv-rails"
 gem "httparty"
 gem "active_model_serializers", "~> 0.10.0"
 gem "kaminari"
+gem "rswag-api"
+gem "rswag-ui"
+
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false

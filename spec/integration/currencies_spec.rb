@@ -45,6 +45,21 @@ describe "Currencies API" do
           ]
         end
 
+        after do |example|
+          content = example.metadata[:response][:content] || {}
+          example_spec = {
+            'application/json' => {
+              examples: {
+                success_example: {
+                  value: parsed_response,
+                },
+              },
+              schema: example.metadata[:response][:schema],
+            },
+          }
+          example.metadata[:response][:content] = content.deep_merge(example_spec)
+        end
+
         run_test! do
           expect(parsed_response).to eq(expected_response)
         end
@@ -58,6 +73,21 @@ describe "Currencies API" do
           {
             error: 'Auth token invalid'
           }
+        end
+
+        after do |example|
+          content = example.metadata[:response][:content] || {}
+          example_spec = {
+            'application/json' => {
+              examples: {
+                error_example: {
+                  value: parsed_response,
+                },
+              },
+              schema: example.metadata[:response][:schema],
+            },
+          }
+          example.metadata[:response][:content] = content.deep_merge(example_spec)
         end
 
         run_test! do
@@ -91,6 +121,21 @@ describe "Currencies API" do
             name: "Russian Ruble",
             rate: "30.0"
           }
+        end
+
+        after do |example|
+          content = example.metadata[:response][:content] || {}
+          example_spec = {
+            'application/json' => {
+              examples: {
+                success_example: {
+                  value: parsed_response,
+                },
+              },
+              schema: example.metadata[:response][:schema],
+            },
+          }
+          example.metadata[:response][:content] = content.deep_merge(example_spec)
         end
 
         run_test! do
